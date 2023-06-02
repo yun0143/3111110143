@@ -6,55 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /*型態選擇器(標籤)*/
+        /* 型態選擇器(標籤) */
         span{
             color: red;
         }
-        /*Class選擇器(使用.符號)*/
+
+        /* Class選擇器(使用，符號) */
         .one{
-            color: red;
+            color: green;
         }
+
         .two{
             font-size: 30px;
         }
+
         /* ID選擇器(使用#符號) */
         #one{
-            color: green;
+            color: purple;
         }
-        /*通用選擇器(使用*符號)*/
+
+        /* 通用選擇器(使用*符號) */
         *{
-            font-family: "標楷體";
+            font-family:"微軟正黑體";
         }
-        /*屬性選擇器*/
+        
+        /* 屬性選擇器 */
         input[type="button"]{
-            background-color: green;
+            background-color: tan;
         }
-        /* 後代選擇器(使用空格符號) */
+        /* 後代選擇器 */
         .div1 a{
-            color: red;
+            color: crimson;
         }
-        /* 子選擇器(使用>符號) */
+        /* 子選擇器 */
         .div2>a{
-            color: red;   
-        }
-        /* 同層相鄰選擇器(使用+符號)同層全體選擇器(使用~符號) */
-        /* ul+P{
+            color: deeppink;
+        } 
+        /* 同層相鄰選擇器(使用+符號)、同層全體選擇器(使用~符號) */
+        /* ul+p{
             color: green;
         } */
-        ul~P{
-            color: yellow;
+        ul~p{
+            color: gold;
         }
         /* 偽類選擇器(使用:符號) */
         #a1:hover{
-            color: green;
+            color: indigo;
         }
-        /*偽元素選擇器(使用::符號) */
+        /* 偽元素選擇器(使用::符號) */
         #div2::after{
             content: "(使用::符號)";
         }
-        /*群組選擇器(使用,符號) */
+        /* 群組選擇器(使用,符號) */
         #div3,#div4{
-            color: red;
+            color: mediumturquoise;
             font-size: 30px;
         }
     </style>
@@ -64,7 +69,7 @@
     <span>型態選擇器</span>
     <span>型態二</span>
     <hr>
-    <h2>Class選擇器(使用.符號)</h2>
+    <h2>Class選擇器(使用，符號)</h2>
     <a href="#" class="one two">Class選擇器</a>
     <hr>
     <h2>ID選擇器(使用#符號)</h2>
@@ -75,22 +80,22 @@
     <hr>
     <h2>後代選擇器(使用空格符號)</h2>
     <div class="div1">
-        <P>
-            <a href="#">div->p->a</a>
-        </P>
+        <p>
+            <a href="#">div1->p->a</a>
+        </p>
     </div>
     <div class="div1">
         <a href="#">div->a</a>
-        </div>
-        <hr>
-        <h2>子選擇器(使用>符號)</h2>
-        <div class="div2">
-            <p>
-                <a href="#">div->p->a</a>
-            </p>
-        </div>
+    </div>
+    <hr>
+    <h2>子選擇器(使用>符號)</h2>
     <div class="div2">
-        <a href="#">div->a</a
+        <p>
+            <a href="#">div->p->a</a>
+        </p>
+    </div>
+        <div class="div2">
+            <a href="#">div->a</a>
     </div>
     <hr>
     <h2>同層相鄰選擇器(使用+符號)、同層全體選擇器(使用~符號)</h2>

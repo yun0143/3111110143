@@ -7,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 id="up">段落(P)</h2>
-    <P>我是段落</P>
+    <h2 id="up">段落(p)</h2>
+    <p>我是段落</p>
     <hr>
     <h2>標籤(span)</h2>
-    <span style="color:red;">國立</span><span style="color:blue;">台中</span>科技大學
+    <span style="color: red;">國立</span><span style="color: pink;">台中</span>科技大學
 <hr>
 <h2>換行(br)</h2>
 123<br>
 456
 <hr>
-    <h2>格式化段落(pre)</h2>
-    <pre>ABCD
-        123
-            456
-                789 
+<h2>格式化段落(pre)</h2>
+<pre>ABCD
+    123
+       456
+          789
 </pre>
 <hr>
 <h2>文字格式化</h2>
@@ -31,85 +31,83 @@
 456<sub>下標</sub><br>
 <ins>新增標示</ins><br>
 <del>刪除標示</del><br>
-<mark>標註</mark>
+<mark>標註</mark><br>
 <hr>
 <h2>超連結(a)</h2>
-<a href="htts://www.gooogle.com.tw">google</a>
-<!--  另開視窗  -->
-<a href="https://www.nutc.edu.tw/"target="_blank">國立台中科技大學</a>
+<a href="https://www.google.com.tw">google</a>
+<!-- 另開視窗 -->
+<a href="http://www.nutc.edu.tw/" target="_blank">國立台中科技大學</a>
 <br>
-<!--  br*10  -->
+<!-- up -->
 <br><br><br><br><br><br><br><br><br><br>
 <a href="#up">錨點</a>
 <hr>
 <h2>圖片(img)</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/2602/2602414.png" width="100" height="100" alt="">
-<img src="school.png" width="200" height="200" alt="">
+<img src="https://cdn-icons-png.flaticon.com/512/10127/10127255.png" width="100" height="100" alt="">
+<img width="200" height="200" alt=""src="flower.png" >
 <hr>
-<h2>列表(u1 o1)</h2>
+<h2>列表(ul ol)</h2>
 <ul type="square">
-<li>1</li>
-<li>2</li>
-<li>3</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
 </ul>
 <ol type="I">
-<li>1</li>
-<li>2</li>
-<li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
 </ol>
-<dl>
-    <dt>姓名</dt>
-    <dd>王大明</dd>
-    <dt>姓名</dt>
-    <dd>王大明</dd>
+<dt>姓名</dt>
+<dd>李詠聖</dd>
+<dt>性別</dt>
+<dd>男</dd>
 </dl>
 <hr>
 <h2>輸入(input)</h2>
-輸入框:<input type="text" value="abc">
-<br>
-密碼:<input type="password">
-<br>
-數字:<input type="number" min="5" max="10">
-<br>
-複選(checkbox)<br>
-興趣:
-<input type="checkbox" disabled>看書
-<input type="checkbox"checkbox>運動
-<input type="checkbox">看電影
-<br>
-單選(radio)<br>
-性別:
-女生<input type="radio" name="sex">
-男生<input type="radio" name="sex">
-不方便透漏<input type="radio" name="sex">
-<br>
-按鈕(button)
-<input type="button" value="登入">
-<input type="submit" value="登入">
-<button>
-    <img width="15" height="15" src="school.png" alt="">
-    登入
+    輸入框: <input type="text" value="123456">
+    <br>
+    密碼: <input type="password">
+    <br>
+    數字: <input type="number" min="5" max="10">
+    <br>
+    複選(checkbox)<br>
+    個性:
+    <input type="checkbox" disabled>愛哭
+    <input type="checkbox" checked>愛笑
+    <input type="checkbox">愛生氣
+    <br>
+    單選(radio)<br>
+    性別:
+    女生<input type="radio" name="sex">
+    男生<input type="radio" name="sex">
+    不方便透漏<input type="radio" name="sex">
+    <br>
+    按鈕(button)
+    <input type="button" value="登入">
+    <input type="submit" value="登出">
+    <button>
+        <img width="15" height="15" alt=""src="flower.png" >
+        登入
     </button>
-    <br>   
+    <br>
     日期(date)
-    <input type="date" min="2023-03-31" max="2023-04-30">
+    <input type="date" min="2023-01-31" max="2023-02-28">
     <br>
     時間(time)
-    <input type="time" value="16:00">
+    <input type="time" value="17:00">
     <br>
     檔案上傳(file)
     <input type="file" accept="image/*">
     <br>
     文章(textarea)
-    <textarea cols="20" rows="5"><</textarea>
+    <textarea cols="15" rows="5"></textarea>
     <br>
     下拉式選單(select)
     <select>
-        <option>博士</option>
-        <option>研究所</option>
-        <option>大學</option>
-        <option>高中</option>
-    </select>
-    <input>
+        <option>0-5歲</option>
+        <option>6-12歲</option>
+        <option>13-20歲</option>
+        <option>21-30歲</option>
+        </select>
 </body>
 </html>
